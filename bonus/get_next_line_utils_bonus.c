@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 22:17:37 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/15 22:57:43 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/15 17:13:47 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,9 @@ char	*ft_strjoin(char *str, char *dup)
 	}
 	j = 0;
 	while (dup[j])
+	{
 		new_str[i++] = dup[j++];
+	}
 	new_str[i] = '\0';
 	free(str);
 	return (new_str);

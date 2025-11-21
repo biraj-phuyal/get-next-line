@@ -6,7 +6,7 @@
 /*   By: biphuyal <biphuyal@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 22:17:34 by biphuyal          #+#    #+#             */
-/*   Updated: 2025/07/15 17:26:09 by biphuyal         ###   ########.fr       */
+/*   Updated: 2025/07/16 14:16:49 by biphuyal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 # include <unistd.h>
 # include <stdio.h>
 
-# define BUFFER_SIZE 10
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 char	*get_next_line(int fd);
 void	move_buffer(char *buff, char **str);
